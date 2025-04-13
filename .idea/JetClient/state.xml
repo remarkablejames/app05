@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JetClientState">
+    <option name="folders">
+      <list>
+        <folderState>
+          <option name="environmentGroups">
+            <list>
+              <environmentGroupState>
+                <option name="environments">
+                  <list>
+                    <environmentState>
+                      <option name="name" value="development" />
+                    </environmentState>
+                    <environmentState>
+                      <option name="name" value="production" />
+                    </environmentState>
+                  </list>
+                </option>
+                <option name="name" value="Default" />
+              </environmentGroupState>
+            </list>
+          </option>
+          <option name="folders">
+            <list>
+              <folderState>
+                <option name="id" value="7652f2fa-288e-4ba1-9d35-75dd0e61c162" />
+                <option name="name" value="server status" />
+                <option name="requests">
+                  <list>
+                    <requestState>
+                      <option name="id" value="569ed318-8aa9-48a6-9243-e089ec475b5e" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="health check" />
+                      <option name="sortWeight" value="1000000" />
+                      <option name="url" value="{{baseUrl}}/server/health" />
+                    </requestState>
+                  </list>
+                </option>
+                <option name="sortWeight" value="1000000" />
+              </folderState>
+              <folderState>
+                <option name="id" value="0e64c630-2ea1-45f0-870c-ff2621c9ff43" />
+                <option name="name" value="auth" />
+                <option name="requests">
+                  <list>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joey@example.com&quot;,&#10;  &quot;password&quot;: &quot;password123&quot;,&#10;  &quot;first_name&quot;: &quot;Joey&quot;,&#10;  &quot;last_name&quot;: &quot;Romaine&quot;,&#10;  &quot;subscribed_to_newsletter&quot;: true&#10;}" />
+                          <option name="type" value="JSON" />
+                        </bodyState>
+                      </option>
+                      <option name="id" value="f1df8338-923d-4ed4-b90b-ebc210ada0af" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="register" />
+                      <option name="sortWeight" value="1000000" />
+                      <option name="url" value="{{baseUrl}}/auth/register" />
+                    </requestState>
+                    <requestState>
+                      <option name="body">
+                        <bodyState>
+                          <option name="raw" value="{&#10;  &quot;email&quot;: &quot;joey@example.com&quot;,&#10;  &quot;password&quot;: &quot;password123&quot;,&#10;  &quot;device_info&quot;: {&#10;    &quot;user_agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3&quot;,&#10;    &quot;ip_address&quot;: &quot;192.168.1.1&quot;,&#10;    &quot;device_id&quot;: &quot;device123452&quot;,&#10;    &quot;device_type&quot;: &quot;phone&quot;,&#10;    &quot;device_name&quot;: &quot;John's phone&quot;,&#10;    &quot;os_name&quot;: &quot;Windows 7&quot;,&#10;    &quot;os_version&quot;: &quot;10.0&quot;,&#10;    &quot;browser_name&quot;: &quot;Chrome&quot;,&#10;    &quot;browser_version&quot;: &quot;58.0.3029.110&quot;&#10;  }&#10;}" />
+                          <option name="type" value="JSON" />
+                        </bodyState>
+                      </option>
+                      <option name="id" value="3e5c9ff7-829c-44c9-902a-e45ad71e3498" />
+                      <option name="method" value="POST" />
+                      <option name="name" value="login" />
+                      <option name="sortWeight" value="2000000" />
+                      <option name="url" value="{{baseUrl}}/auth/login" />
+                    </requestState>
+                  </list>
+                </option>
+                <option name="sortWeight" value="2000000" />
+              </folderState>
+              <folderState>
+                <option name="id" value="624c5193-9537-425d-8d50-15392374b274" />
+                <option name="name" value="posts" />
+                <option name="requests">
+                  <list>
+                    <requestState>
+                      <option name="id" value="06d6158c-19b8-42f4-9bb9-c2a8bd29652d" />
+                      <option name="method" value="GET" />
+                      <option name="name" value="get all posts" />
+                      <option name="sortWeight" value="1000000" />
+                      <option name="url" value="{{baseUrl}}/posts" />
+                    </requestState>
+                  </list>
+                </option>
+                <option name="sortWeight" value="3000000" />
+              </folderState>
+            </list>
+          </option>
+          <option name="id" value="cd64ce57-2890-4f36-b3b9-85c89d77523e" />
+          <option name="name" value="app05 APIs" />
+          <option name="selectedEnvironmentIds">
+            <map>
+              <entry key="default" value="development" />
+            </map>
+          </option>
+          <option name="syncProperties">
+            <synchronizationPropertiesState>
+              <option name="autoSync" value="true" />
+              <option name="folderPath" value="$PROJECT_DIR$/.jetclient" />
+            </synchronizationPropertiesState>
+          </option>
+          <option name="variables">
+            <variablesState>
+              <option name="json" value="{&#10;  development: {&#10;    &quot;baseUrl&quot;: &quot;http://localhost:8081/api/v1&quot;,&#10;    &quot;token&quot;: &quot;qrpm29EaFPQRvfOxdqGIz9kVcDn6n7rSBHxQVg1SPy8=&quot;&#10;  },&#10;  production: {&#10;    &quot;baseUrl&quot;: &quot;https://backend.somolabs.com/api/v1&quot;,&#10;    &quot;token&quot;: &quot;3qimBmhNU82xt_FPaTacJR5gKGjIN-4dnOGvRbfOcDk=&quot;&#10;  }&#10;&#10;}" />
+            </variablesState>
+          </option>
+        </folderState>
+      </list>
+    </option>
+    <option name="id" value="f627fa83-7e5f-4907-ae8f-9e73289befcd" />
+    <option name="version" value="6" />
+  </component>
+</project>
