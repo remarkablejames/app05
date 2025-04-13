@@ -20,7 +20,6 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
-	"github.com/joho/godotenv"
 	"log"
 	"net/http"
 	"os"
@@ -32,11 +31,11 @@ import (
 
 func main() {
 	// Load environment variables from .env file
-	err := godotenv.Load()
-	if err != nil {
-		//log.Panicln("\033[31mError: Unable to load .env file, application will stop\033[0m")
-		fmt.Println("Error: Unable to load .env file,continuing without it")
-	}
+	//err := godotenv.Load()
+	//if err != nil {
+	//	//log.Panicln("\033[31mError: Unable to load .env file, application will stop\033[0m")
+	//	fmt.Println("Error: Unable to load .env file,continuing without it")
+	//}
 
 	// LOAD CONFIGURATION
 	cfg := config.LoadConfig()
